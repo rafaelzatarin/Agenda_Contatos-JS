@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Contatos - JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Agenda de Contatos em JavaScript</h2>
+    <div id='divForm'>
+        <form id='formAgenda'>
+            <p>
+                <label id="fnome">Nome: </label>
+                <input type="text" name='txtNome' id='txtNome' autofocus>
+                <br>
+                <label id="fapelido">Apelido: </label>
+                <input type="text" name='txtApelido' id='txtApelido'>
+                <label id="fsexo">Sexo: </label>
+                <select name="sSexo" id="sSexo">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outros">Outro</option>
+                </select>
+                <br>
+                <label id="ffixo">Tel. Fixo: </label>
+                <input type="text" name='txtFixo' id='txtFixo'>
+                <label id="fcomer">Comercial: </label>
+                <input type="text" name='txtComer' id='txtComer'>
+                <br>
+                <label id="fCel">Celular: </label>
+                <input type="text" name='txtCel' id='txtCel'>
+                <label id="fwhats">Whatsapp: </label>
+                <input type="text" name='txtWhats' id='txtWhats'>
+                <br>
+                <label id="fEmail">E-mail: </label>
+                <input type="text" name='txtEmail' id='txtEmail'>
+            </p>
+        </form>
+    </div>
+    <div id='buttons'>
+        <table>
+            <tr>
+                <th><button type="button" id='btnGravar' onclick="gravar()">Gravar</button></th>
+                <th><button type="button" id='btnAbrir' onclick="abrirArq()">Abrir Arquivo</button></th>
+            </tr>
+        </table>
+    </div>
+    <script type='text/javaScript' src='FileSaver.js'></script>
+    <script src='agenda.js'></script>
+</body>
+</html>
